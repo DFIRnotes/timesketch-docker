@@ -4,21 +4,16 @@ timesketch-docker
 This project contains a Dockerfile, entrypoint script and docker-compose configuration file that will
 build out a cluster of containers with the necessary parts to run timesketch.
 
-http://www.timesketch.org/
+https://github.com/google/timesketch/wiki/Installation
 
 Requirements
 ------------
 
-Docker Toolbox ships with everything needed.
-
-https://www.docker.com/products/docker-toolbox
-
+Docker ships with everything needed. I've been testing on 14.04 and 16.04 host systems.
 
 Build
 -----
 ```
-$ docker-machine create docker-vm
-$ eval $(docker-machine env docker-vm)
 $ git clone https://github.com/nickryand/timesketch-docker.git
 $ cd timesketch-docker
 $ docker-compose up
@@ -48,9 +43,9 @@ $
 ```
 You can use the same pattern to run any of the tsctl commands you may need.
 
-Author
+Upstream Author
 ------
 
-Nick Downs <nickryand@gmail.com>
+Nick Downs <nickryand@gmail.com> put together this project, the Docker configs, and scripts
 
- 
+Timesketch: https://github.com/google/timeskech/
